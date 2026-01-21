@@ -1,0 +1,45 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Booking {
+  id             String        @id @default(cuid())
+  createdAt      DateTime      @default(now())
+  updatedAt      DateTime      @updatedAt
+  source         BookingSource
+  name           String
+  phone          String
+  email          String?
+  serviceType    String
+  pickup         String
+  drop           String
+  pickupDateTime DateTime
+  carType        String?
+  tripType       String?
+  distanceKm     Float?
+  estimatedFare  Int?
+  notes          String?
+  status         BookingStatus @default(NEW)
+  whatsappText   String
+
+  @@index([phone, createdAt])
+  @@index([status, createdAt])
+}
+
+enum BookingSource {
+  CONTACT_FORM
+  FARE_CALCULATOR
+  WHATSAPP_FLOATING_BUTTON
+}
+
+enum BookingStatus {
+  NEW
+  CONTACTED
+  CONFIRMED
+  CANCELLED
+}
