@@ -21,7 +21,7 @@ export function CTASection() {
               Ready to Book Your Ride?
             </h2>
             <p className="text-primary-foreground/80 mb-8">
-              Get instant quotes and book your cab in seconds. We're available 24/7 
+              Get instant quotes and book your cab in seconds. We're available 24/7
               for all your travel needs. Call us now or send a WhatsApp message!
             </p>
 
@@ -29,8 +29,7 @@ export function CTASection() {
               <a href="tel:+919876543210">
                 <Button
                   size="lg"
-                  variant="outline"
-                  className="border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10 w-full sm:w-auto"
+                  className="bg-green-600 hover:bg-green-700 text-white w-full sm:w-auto"
                 >
                   <Phone className="w-5 h-5 mr-2" />
                   Call: +91 98765 43210

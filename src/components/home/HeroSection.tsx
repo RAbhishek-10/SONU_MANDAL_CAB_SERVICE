@@ -60,13 +60,16 @@ export function HeroSection() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <Button size="lg" className="bg-accent hover:bg-accent/90 text-accent-foreground text-lg px-8">
+              <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-white text-lg px-8">
                 Book Now on WhatsApp
                 <ArrowRight className="w-5 h-5 ml-2" />
               </Button>
             </a>
             <Link to="/services">
-              <Button size="lg" variant="outline" className="border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10 text-lg px-8">
+              <Button
+                size="lg"
+                className="bg-blue-600 hover:bg-blue-700 text-white text-lg px-8"
+              >
                 View Services
               </Button>
             </Link>

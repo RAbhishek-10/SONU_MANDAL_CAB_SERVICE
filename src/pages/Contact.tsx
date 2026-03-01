@@ -108,7 +108,7 @@ Message: ${formData.message}`;
               Contact & Booking
             </h1>
             <p className="text-lg text-primary-foreground/80">
-              Ready to book your ride? Fill out the form below or contact us directly. 
+              Ready to book your ride? Fill out the form below or contact us directly.
               We respond within minutes!
             </p>
           </motion.div>
@@ -131,9 +131,9 @@ Message: ${formData.message}`;
               </h2>
 
               <div className="space-y-4">
-                <a href="tel:+919876543210" className="flex items-start gap-4 p-4 bg-secondary rounded-xl hover:bg-secondary/70 transition-colors">
+                <a href="tel:+919876543210" className="flex items-start gap-4 p-4 bg-green-500/10 hover:bg-green-500/20 rounded-xl transition-colors border border-green-500/20">
                   <div className="w-10 h-10 rounded-lg bg-accent/10 flex items-center justify-center flex-shrink-0">
-                    <Phone className="w-5 h-5 text-accent" />
+                    <Phone className="w-5 h-5 text-green-600" />
                   </div>
                   <div>
                     <p className="font-medium text-foreground">Phone (24/7)</p>
@@ -199,7 +199,7 @@ Message: ${formData.message}`;
                 <h2 className="font-display text-2xl font-bold text-foreground mb-6">
                   Book Your Ride
                 </h2>
-                
+
                 <form onSubmit={handleSubmit} className="space-y-6">
                   <div className="grid md:grid-cols-2 gap-4">
                     <div className="space-y-2">
@@ -321,7 +321,7 @@ Message: ${formData.message}`;
 
                   <p className="text-center text-sm text-muted-foreground">
                     Or call us directly at{" "}
-                    <a href="tel:+919876543210" className="text-accent font-medium">
+                    <a href="tel:+919876543210" className="text-green-600 font-medium hover:text-green-700">
                       +91 98765 43210
                     </a>
                   </p>

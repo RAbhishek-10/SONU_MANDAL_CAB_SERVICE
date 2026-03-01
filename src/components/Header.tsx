@@ -70,7 +70,10 @@ export function Header() {
           {/* CTA Button */}
           <div className="hidden md:flex items-center gap-3">
             <a href="tel:+919876543210" className="flex items-center gap-2">
-              <Button variant="outline" size="sm" className={isScrolled ? '' : 'border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10'}>
+              <Button
+                size="sm"
+                className="bg-green-600 hover:bg-green-700 text-white"
+              >
                 <Phone className="w-4 h-4" />
                 <span>Call Now</span>
               </Button>
@@ -128,7 +131,7 @@ export function Header() {
               </nav>
               <div className="flex flex-col gap-2 mt-4 pt-4 border-t">
                 <a href="tel:+919876543210">
-                  <Button variant="outline" className="w-full">
+                  <Button className="w-full bg-green-600 hover:bg-green-700 text-white">
                     <Phone className="w-4 h-4 mr-2" />
                     Call Now
                   </Button>
